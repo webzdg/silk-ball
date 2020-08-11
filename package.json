@@ -1,0 +1,25 @@
+{
+  "name": "silk-ball",
+  "version": "1.0.2",
+  "description": "It has a silky sliding inertia ball",
+  "author": {
+    "name": "zdg",
+    "email": "592885211@qq.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "serve": "cross-env ENV=development rollup -c -w",
+    "build": "cross-env ENV=production rollup -c"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "cross-env": "^7.0.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-serve": "^1.0.3",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}

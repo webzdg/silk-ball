@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ball{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: red;
+            color: #fff;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wapper">
+        <div id="ball">SilkBall</div>
+    </div>
+    <script src="/dist/SilkBall.js"></script>
+    <script>
+        let silkBall = new SilkBall('#ball',{
+            rangeBody : true,
+            margin: 20,
+            direction : 'x'
+        });
+        silkBall.on('touchStart',(pos)=>{
+            console.log(pos)
+        })
+        silkBall.on('touchMove',(pos)=>{
+            console.log(pos)
+        })
+        silkBall.on('touchEnd',(pos)=>{
+            console.log(pos)
+        })
+    </script>
+</body>
+</html>
